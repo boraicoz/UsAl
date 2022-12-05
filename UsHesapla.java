@@ -5,10 +5,14 @@ public class UsHesapla {
     public static void main(String[] args) {
         int taban,us,temp=1;
         Scanner in=new Scanner(System.in);
+        do{
         System.out.print("Tabani giriniz:");
         taban=in.nextInt();
         System.out.print("Ussu giriniz:");
         us=in.nextInt();
+        }
+        while(taban==0&&us==0);
+
           for(int i=1;i<=us;i++)
           {temp*=taban;}
           if(us==0)
